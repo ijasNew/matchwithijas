@@ -1,85 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>matchwithijas.com - Coming Soon</title>
-    <style>
-        body {
-            background: #8f00ff;
-            color: #fff;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255,255,255,0.05);
-            border-radius: 32px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-            max-width: 360px;
-            width: 100%;
-        }
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 1.75rem;
-            margin-bottom: 0.7rem;
-        }
-        p {
-            font-size: 1.12rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-        .cta-btn {
-            display: inline-block;
-            background: #fff;
-            color: #8f00ff;
-            font-size: 1.08rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 28px;
-            padding: 12px 34px;
-            text-decoration: none;
-            box-shadow: 0 2px 10px 0 rgba(143,0,255,0.12);
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
-        }
-        .cta-btn:hover, .cta-btn:focus {
-            background: #8f00ff;
-            color: #fff;
-            box-shadow: 0 2px 18px 0 rgba(143,0,255,0.20);
-        }
-        @media (max-width: 600px) {
-            .container {
-                max-width: 95vw;
-                padding: 1.2rem;
-                border-radius: 18px;
-            }
-            .logo {
-                font-size: 1.4rem;
-            }
-            .cta-btn {
-                font-size: 1rem;
-                padding: 11px 18px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Match with Ijas | Personalized Marriage Consultant in Malappuram & Calicut</title>
+
+  <!-- Primary SEO meta -->
+  <meta name="description"
+        content="Match with Ijas is a personalized marriage consultant and professional matchmaking service for educated professionals in Malappuram and Calicut, Kerala. Religion-neutral, confidential, and focused on compatible life partners." />
+  <meta name="keywords"
+        content="marriage consultant Malappuram, marriage broker Malappuram, marriage consultant Calicut, marriage broker Calicut, professional matchmaking Kerala, educated professionals marriage, religion neutral matchmaking, personalized marriage consultant, Malabar matchmaking service" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="Match with Ijas | Personalized Marriage Consultant in Malappuram & Calicut" />
+  <meta property="og:description" content="Religion-neutral, confidential matchmaking for educated professionals in Malappuram and Calicut, Kerala." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/ijas-image-hero.webp" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div class="container">
-        <div class="logo">matchwithijas.com</div>
-        <h1>Coming Soon</h1>
-        <p>This website under construction please connect through the form below.</p>
-        <a class="cta-btn" href="https://forms.gle/mJUz9amoyYWsjCeJA" target="_blank" rel="noopener noreferrer">Register Free Now</a>
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo" aria-label="Match with Ijas home">
+      MATCH WITH <span>IjAs</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn-primary"
+       href="https://forms.gle/mJUz9amoyYWsjCeJA"
+       rel="noopener noreferrer"
+       aria-label="Register for free matchmaking consultation">
+      Register for Free
+    </a>
+  </header>
+
+  <main>
+    <!-- Hero with small form -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Personalized Marriage Consultant in Malappuram &amp; Calicut</h1>
+        <p>
+          Match with Ijas is a religion‑neutral matchmaking service in Malappuram and Calicut, Kerala,
+          helping educated professionals and families find compatible life partners with a blend of traditional values
+          and modern insight.
+        </p>
+
+        <div class="lead-form">
+          <h2>Get a Callback</h2>
+
+          <form id="leadForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="marriageFor">Marriage for</label>
+                <select id="marriageFor" required>
+                  <option value="">Select</option>
+                  <option value="self">Self</option>
+                  <option value="son">Son</option>
+                  <option value="daughter">Daughter</option>
+                  <option value="brother">Brother</option>
+                  <option value="sister">Sister</option>
+                  <option value="relative">Relative / Friend</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="location">Location</label>
+                <select id="location" required>
+                  <option value="">Select</option>
+                  <option value="malappuram">Malappuram</option>
+                  <option value="kozhikode">Kozhikode</option>
+                  <option value="kannur">Kannur</option>
+                  <option value="thrissur">Thrissur</option>
+                  <option value="other">Other (Kerala)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" placeholder="Enter phone number" required />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="stats" aria-label="Match with Ijas experience statistics">
+          <div class="stat-card">
+            <h3>5+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <h3>250+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-card">
+            <h3>20+</h3>
+            <p>Marriages Fixed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-photo-wrapper">
+          <img src="/ijas-image-hero.webp"
+               alt="Ijas, personalized marriage consultant in Malappuram and Calicut"
+               loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Services -->
+    <section id="services">
+      <h2 class="section-title">Matchmaking Services for Educated Professionals</h2>
+      <p class="section-subtitle">
+        Premium, personalized and religion‑neutral matchmaking focused on compatible life partners.
+      </p>
+
+      <div class="card-grid">
+        <article class="feature-card">
+          <div class="icon-circle">❤</div>
+          <h3>Handpicked Matches</h3>
+          <p>
+            High-quality, personalized recommendations curated for your education, values, and long‑term goals.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon-circle">🛡</div>
+          <h3>Confidential Service</h3>
+          <p>
+            Strict privacy with profiles shared only with serious, preferred matches for your consent.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon-circle">👥</div>
+          <h3>Dedicated Mentors</h3>
+          <p>
+            One‑to‑one guidance from an experienced marriage consultant from first call to final decision.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section aria-labelledby="process-title">
+      <h2 id="process-title" class="section-title">Our 3‑Step Matchmaking Process</h2>
+      <p class="section-subtitle">
+        A simple, personal and effective process to find the right partner for you and your family.
+      </p>
+
+      <div class="card-grid">
+        <article class="process-card">
+          <div class="icon-circle">🔍</div>
+          <h3>Understand Your Needs</h3>
+          <p>
+            We understand your background, education, lifestyle, and expectations before suggesting any profile.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="icon-circle">🗂</div>
+          <h3>Filter with Our Data</h3>
+          <p>
+            Our curated database of educated professionals is filtered to match your preferences and values.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="icon-circle">✅</div>
+          <h3>Find a Match for You</h3>
+          <p>
+            You receive short‑listed, high‑compatibility profiles and support for meetings and follow‑up.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="pricing-header">
+        <h2>Matchmaking Plans for Malappuram &amp; Calicut</h2>
+        <p>Choose the support level that suits your family and budget.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Free Service -->
+        <article class="pricing-card">
+          <div class="badge">Most Flexible</div>
+          <h3>Free Service</h3>
+          <p class="best-for">Best for self‑driven families who want flexible support.</p>
+
+          <p class="price">&#8377;0 <span>/ Lifetime</span></p>
+
+          <ul class="features">
+            <li>Unlimited matches based on your preferences.</li>
+            <li>Meetings arranged only when both parties are interested.</li>
+            <li>&#8377;1,000 before the first meeting only (no extra for future meetings).</li>
+            <li>Service charge applicable only after marriage is fixed.</li>
+            <li>WhatsApp support only.</li>
+          </ul>
+
+          <a class="plan-btn"
+             href="https://forms.gle/mJUz9amoyYWsjCeJA"
+             rel="noopener noreferrer">
+            Continue with Free Plan
+          </a>
+        </article>
+
+        <!-- Home Visit Service -->
+        <article class="pricing-card highlighted">
+          <div class="badge primary">Popular</div>
+          <h3>Home Visit Service</h3>
+          <p class="best-for">Best for families who prefer personal discussion and faster coordination.</p>
+
+          <p class="price">&#8377;3,000 <span>/ Lifetime</span></p>
+          <p class="support">Support: Phone &amp; WhatsApp</p>
+
+          <ul class="features">
+            <li>Unlimited matches based on your preferences.</li>
+            <li>Home / office visit to understand requirements clearly.</li>
+            <li>Meetings arranged when both parties show interest.</li>
+            <li>Refund if marriage is not fixed through us (visit &amp; meeting expenses deducted).</li>
+            <li>Priority in matching with faster response time.</li>
+            <li>Service charge applicable only after marriage is fixed.</li>
+          </ul>
+
+          <a class="plan-btn primary-btn"
+             href="https://wa.me/919746900055?text=Hi%20Ijas%2C%20I%20want%20to%20continue%20with%20the%20Home%20Visit%20Matchmaking%20Plan.%20Please%20share%20details%20and%20next%20steps."
+             target="_blank"
+             rel="noopener noreferrer">
+            Continue with Plan
+          </a>
+        </article>
+
+        <!-- Guaranteed Service -->
+        <article class="pricing-card">
+          <div class="badge">Premium</div>
+          <h3>Guaranteed Service</h3>
+          <p class="best-for">Best for families seeking committed, end‑to‑end support.</p>
+
+          <p class="price">&#8377;50,000 <span>/ Lifetime</span></p>
+
+          <ul class="features">
+            <li>Marriage‑focused matching with clear goal to fix the alliance.</li>
+            <li>Home visit support included.</li>
+            <li>Meetings arranged and followed up professionally.</li>
+            <li>30% advance payment required.</li>
+            <li>Advance refunded if partner not finalised (meeting expenses deducted).</li>
+            <li>No post‑marriage service charge (included in this plan).</li>
+            <li>Direct personal support by Ijas.</li>
+          </ul>
+
+          <a class="plan-btn"
+             href="https://wa.me/919746900055?text=Hi%20Ijas%2C%20I%20want%20to%20continue%20with%20the%20Guaranteed%20Matchmaking%20Plan%20for%20our%20family.%20Kindly%20guide%20us%20on%20the%20process%20and%20payment."
+             target="_blank"
+             rel="noopener noreferrer">
+            Continue with Plan
+          </a>
+        </article>
+      </div>
+
+      <div class="common-benefits">
+        <h3>Common Benefits in All Plans</h3>
+        <ul>
+          <li>3–5 suitable matches per month.</li>
+          <li>Strict privacy and confidentiality.</li>
+          <li>Dedicated relationship consultant.</li>
+          <li>Service charge applies only after marriage is fixed (except Guaranteed Service).</li>
+          <li>Service charge fixed based on preferences (normally starts from &#8377;10,000).</li>
+          <li>Home Visit &amp; Guaranteed services currently available only in Malabar region (Malappuram, Calicut).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2 class="section-title">Client Testimonials</h2>
+      <p class="section-subtitle">Real stories from couples who found their match with Ijas.</p>
+
+      <figure class="testimonial-box">
+        <blockquote>
+          “We are so grateful to Match with Ijas for bringing us together. The process
+          was personal and thoughtful, and they truly understood what we were looking
+          for. We couldn’t be happier!”
+        </blockquote>
+        <figcaption>— Verified client couple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div>
+      <a href="index.html" class="logo" aria-label="Match with Ijas home">
+      MATCH WITH <span>IjAs</span>
+    </a>
+      <p style="margin-top:6px;">Your trusted partner in finding the perfect match in Malappuram and Calicut.</p>
+      <p style="margin-top:12px;">© 2025 Match with Ijas. All Rights Reserved.</p>
     </div>
+
+    <div>
+      <div class="footer-column-title">Legal</div>
+      <ul>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/tc.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-column-title">Contact</div>
+      <ul>
+        <li><a href="tel:+919746177055">Call: +91 97461 77055</a></li>
+        <li><a href="https://wa.me/919746900055" target="_blank" rel="noopener noreferrer">WhatsApp: +91 97469 00055</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-column-title">Connect</div>
+      <ul>
+        <li><a href="https://www.facebook.com/matchwithijas">Facebook</a></li>
+        <li><a href="https://www.instagram.com/matchwithijas">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/matchwithijas">LinkedIn</a></li>
+        <li><a href="https://youtube.com/@matchwithijas">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx33FggT-HZHzRMJh5bXOUs0syGygCUBlGDtnq1Wuk2WTicFSFrxi7C4VMnA5Tec1W2/exec';
+    const redirectURL = 'thankyou.html';
+
+    document.getElementById('leadForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const marriageFor = document.getElementById('marriageFor').value;
+      const location = document.getElementById('location').value;
+      const phone = document.getElementById('phone').value;
+
+      try {
+        await fetch(scriptURL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, marriageFor, location, phone })
+        });
+
+        window.location.href = redirectURL;
+      } catch (err) {
+        alert('Something went wrong. Please try again.');
+        console.error(err);
+      }
+    });
+  </script>
 </body>
 </html>
