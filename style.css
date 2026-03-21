@@ -541,3 +541,12 @@
         transform: none;
       }
     }
+
+
+      .refund {
+      margin-top: 40px;
+      background: #ecfff490;
+      border-radius: 16px;
+      padding: 22px 24px;
+      text-align: center;
+    }
